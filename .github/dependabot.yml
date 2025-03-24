@@ -1,36 +1,19 @@
 version: 2
 updates:
-  # Node.js依存関係の更新設定
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "monday"
+    # セキュリティ更新を有効化
     open-pull-requests-limit: 10
-    versioning-strategy: auto
     labels:
       - "dependencies"
       - "npm"
-    commit-message:
-      prefix: "npm"
-      prefix-development: "npm dev"
-      include: "scope"
-    # セキュリティアップデートを優先
-    groups:
-      security-updates:
-        update-types:
-          - "security"
-        dependency-type: "production"
 
-  # GitHub Actions依存関係の更新設定
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "monday"
-    commit-message:
-      prefix: "actions"
-      include: "scope"
     labels:
       - "dependencies"
       - "github-actions"
