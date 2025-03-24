@@ -3,12 +3,12 @@ import './App.css';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 import { Todo } from './types/todo';
-import { 
-  getTodosFromCookie, 
-  addTodo, 
-  updateTodo, 
-  deleteTodo, 
-  toggleTodoCompleted 
+import {
+  getTodosFromCookie,
+  addTodo,
+  updateTodo,
+  deleteTodo,
+  toggleTodoCompleted,
 } from './utils/cookieUtils';
 
 const App: React.FC = () => {

@@ -23,9 +23,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, onToggleComplete, onEdit, onD
           onChange={() => onToggleComplete(todo.id)}
         />
         <div className="todo-details">
-          <h3 style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
-            {todo.title}
-          </h3>
+          <h3 style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>{todo.title}</h3>
           <p>{todo.details}</p>
           <p className="due-date">Due: {formatDate(todo.dueDate)}</p>
         </div>
