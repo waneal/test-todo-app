@@ -1,0 +1,12 @@
+# These owners will be the default owners for everything in the repo.
+# They will be requested for review when someone opens a pull request.
+* @waneal
+
+# Security-related files
+/SECURITY.md @waneal
+
+# GitHub Actions workflows
+/.github/workflows/ @waneal
+
+# Application source code
+/src/ @waneal
