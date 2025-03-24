@@ -1,27 +1,27 @@
-## 概要
+## Overview
 
-<!-- PRの背景・目的・概要 -->
+<!-- Background, purpose, and overview of this PR -->
 
-## 関連タスク
+## Related Tasks
 
-<!-- 関連するIssueやチケットのリンクを貼る。Issueの場合は、「#<IssueNumber>」でリンクできる -->
+<!-- Links to related Issues or tickets. For Issues, use "#<IssueNumber>" to create a link -->
 
-## やったこと
+## Changes Made
 
-<!-- このPRで何をしたのか？ -->
+<!-- What did you do in this PR? -->
 
-## やらないこと
+## Out of Scope
 
-<!-- このPRでやらないことは何か？ -->
+<!-- What is not included in this PR? -->
 
-## 影響範囲
+## Impact
 
-<!-- 影響を及ぼす範囲や他の機能への影響 -->
+<!-- Areas affected by this change and impact on other features -->
 
-## テスト
+## Testing
 
-<!-- テスト方法や結果 -->
+<!-- Test methods and results -->
 
-## 備考
+## Notes
 
-<!-- レビュワーへの伝達事項や残しておきたい情報 -->
+<!-- Additional information for reviewers or things to remember -->
