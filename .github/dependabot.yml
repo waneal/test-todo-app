@@ -7,7 +7,7 @@ updates:
       interval: "weekly"
       day: "monday"
     open-pull-requests-limit: 10
-    versioning-strategy: auto
+    versioning-strategy: "auto"
     labels:
       - "dependencies"
       - "npm"
@@ -15,12 +15,12 @@ updates:
       prefix: "npm"
       prefix-development: "npm dev"
       include: "scope"
-    # セキュリティアップデートを優先
+    # セキュリティアップデートの優先設定
     groups:
-      security-updates:
+      production-dependencies:
+        dependency-type: "production"
         update-types:
           - "security"
-        dependency-type: "production"
 
   # GitHub Actions依存関係の更新設定
   - package-ecosystem: "github-actions"
