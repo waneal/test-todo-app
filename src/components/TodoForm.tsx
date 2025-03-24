@@ -57,9 +57,9 @@ const TodoForm: React.FC<TodoFormProps> = ({ onSubmit, editingTodo }) => {
   return (
     <form onSubmit={handleSubmit} className="todo-form">
       <h2>{editingTodo ? 'Edit Task' : 'Add New Task'}</h2>
-      
+
       {error && <div className="error">{error}</div>}
-      
+
       <div className="form-group">
         <label htmlFor="title">Title:</label>
         <input
@@ -71,7 +71,7 @@ const TodoForm: React.FC<TodoFormProps> = ({ onSubmit, editingTodo }) => {
           required
         />
       </div>
-      
+
       <div className="form-group">
         <label htmlFor="details">Details:</label>
         <textarea
@@ -82,7 +82,7 @@ const TodoForm: React.FC<TodoFormProps> = ({ onSubmit, editingTodo }) => {
           rows={3}
         />
       </div>
-      
+
       <div className="form-group">
         <label htmlFor="dueDate">Due Date:</label>
         <input
@@ -93,10 +93,14 @@ const TodoForm: React.FC<TodoFormProps> = ({ onSubmit, editingTodo }) => {
           required
         />
       </div>
-      
+
       <div className="form-actions">
         <button type="submit">{editingTodo ? 'Update Task' : 'Add Task'}</button>
-        {editingTodo && <button type="button" onClick={resetForm}>Cancel</button>}
+        {editingTodo && (
+          <button type="button" onClick={resetForm}>
+            Cancel
+          </button>
+        )}
       </div>
     </form>
   );

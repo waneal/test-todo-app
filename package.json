@@ -47,5 +47,8 @@
   },
   "devDependencies": {
     "prettier": "^3.5.3"
+  },
+  "engines": {
+    "node": "22.14.0"
   }
 }

@@ -30,23 +30,21 @@ export const addTodo = (todo: Todo): Todo[] => {
 
 export const updateTodo = (updatedTodo: Todo): Todo[] => {
   const todos = getTodosFromCookie();
-  const newTodos = todos.map(todo => 
-    todo.id === updatedTodo.id ? updatedTodo : todo
-  );
+  const newTodos = todos.map((todo) => (todo.id === updatedTodo.id ? updatedTodo : todo));
   saveTodosToCookie(newTodos);
   return newTodos;
 };
 
 export const deleteTodo = (id: string): Todo[] => {
   const todos = getTodosFromCookie();
-  const newTodos = todos.filter(todo => todo.id !== id);
+  const newTodos = todos.filter((todo) => todo.id !== id);
   saveTodosToCookie(newTodos);
   return newTodos;
 };
 
 export const toggleTodoCompleted = (id: string): Todo[] => {
   const todos = getTodosFromCookie();
-  const newTodos = todos.map(todo => 
+  const newTodos = todos.map((todo) =>
     todo.id === id ? { ...todo, completed: !todo.completed } : todo
   );
   saveTodosToCookie(newTodos);
