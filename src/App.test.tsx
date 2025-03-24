@@ -2,8 +2,14 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders Todo App header', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const headerElement = screen.getByText(/Todo App/i);
+  expect(headerElement).toBeInTheDocument();
+});
+
+test('renders empty state message when no tasks exist', () => {
+  render(<App />);
+  const emptyStateElement = screen.getByText(/No tasks found/i);
+  expect(emptyStateElement).toBeInTheDocument();
 });
